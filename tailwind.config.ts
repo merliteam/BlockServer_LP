@@ -11,7 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        purpleStart: "#8457E4", // Color inicial del gradiente
+        purpleEnd: "#AF98E1",   // Color final del gradiente
       },
+      fontFamily: {
+        minecraft: ['Minecraft', 'sans-serif']
+      }
     },
   },
   plugins: [],
