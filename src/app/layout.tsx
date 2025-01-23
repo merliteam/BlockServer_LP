@@ -15,6 +15,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <link rel="icon" href="/happy_creeper_head.babdbc4478f5ffbe44d9.png" />
+      <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
+
       <title>Block-Server</title>
       </head>
       <body

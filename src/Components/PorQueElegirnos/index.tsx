@@ -4,20 +4,18 @@ import PorQueElegirnosCard from "../PorQueElegirnosCard";
 
 export default function PorQueElegirnos() {
   return (
-    <div className="flex flex-col items-center bg-gray-950 py-24 pb-52 px-6 ">
+    <div className="flex flex-col items-center bg-[#292226] md:bg-gray-950 py-24 pb-32 md:pb-52 px-20 gap-14 md:gap-1">
       {/* Título */}
-      <h1 className="font-bold text-white text-[36px] text-center mb-4">
-        ¿Por qué elegirnos?
+      <h1 className="font-normal text-white text-[36px] text-center mb-10">
+        ¿Por qué<br/>elegirnos?
       </h1>
-      <p className="text-white text-lg text-center mb-12">
-        Aquí te contaremos sobre nosotros
-      </p>
+  
 
       {/* Contenedor de tarjetas */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+      <div className="flex flex-col items-center justify-center md:grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-20 md:items-start">
   {porQueElegirnosCards.map((card, index) => (
         PorQueElegirnosCard({card})
-  ))}
+    ))}
 </div>
 
 
