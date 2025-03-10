@@ -1,4 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignorar carpeta dist de Electron
+electron/dist/
+
+# Ignorar node_modules (por si no está)
+node_modules/
 
 # dependencies
 /node_modules
