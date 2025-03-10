@@ -12,7 +12,8 @@
   import DescargarHostLocal from "@/Components/DescargarHostLocal";
   export default function Home({ Component, pageProps }: AppProps) {
     return (
-      <ServerProvider>
+      <div className="overflow-hidden">
+<ServerProvider>
         <Header/>
         <TravelAgency/>
         <div className="bg-gray-950 min-h-screen flex flex-col justify-center items-center">
@@ -23,5 +24,7 @@
         <Lanzamiento/>
         <Footer/>
       </ServerProvider>
+      </div>
+      
     );
   }

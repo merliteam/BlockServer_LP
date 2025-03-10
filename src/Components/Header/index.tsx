@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BotonDescargar from "../BotonDescargar";
 
 export default function Header(){
     return (
@@ -15,8 +16,8 @@ export default function Header(){
                                 { /* Navigation */}
                             <Link href="/blog" className="text-white">Blog</Link>
                              <Link href="/guias" className="text-white">Guías</Link>
-                             <Link href="/comenzar" className="text-white">Comenzar</Link>
-                             <Link href="/" className="rounded-lg text-white bg-gradient-to-r from-purpleStart to-purpleEnd px-5 py-2 transition-all hover:from-[#683ec2] hover:to-[#8f6edc]">Ingresar</Link>
+                             <BotonDescargar />
+                             <Link href="/auth" className="rounded-lg text-white bg-gradient-to-r bg-blue-500 px-5 py-2 transition-all hover:bg-blue-700 hover:to-[#8f6edc]">Ingresar</Link>
 
                     </div>
             </div>

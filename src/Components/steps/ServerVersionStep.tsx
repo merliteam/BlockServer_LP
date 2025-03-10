@@ -4055,13 +4055,11 @@ const ServerVersionStep = ({ onNext, onBack }: ServerVersionStepProps) => {
   }
 
 
-  const handleVersionSelect = (version: string) => {
-    setSelectedVersion(version);
-  };
+ 
   
-  const handleServerTypeSelect = (serverType: string, serverName: string) => {
-    setSelectedServerName(serverName);
-    setSelectedServerType(serverType);
+  const handleServerTypeSelect = ( version: string ) => {
+    setSelectedVersion(version);
+    setSelectedServerName(version);
   };
 
   const handleNext = () => {
@@ -4111,7 +4109,7 @@ const ServerVersionStep = ({ onNext, onBack }: ServerVersionStepProps) => {
             versions?.map((server) => (
               <button
                 key={server.id}
-                onClick={() => handleServerTypeSelect(server.type, server.id)}
+                onClick={() => handleServerTypeSelect( server.id)}
                 onDoubleClick={handleNext}
                 className={`p-4 border rounded-lg ${
                   selectedServerName === server.id 
@@ -4132,7 +4130,7 @@ const ServerVersionStep = ({ onNext, onBack }: ServerVersionStepProps) => {
                 versions?.map((server) => (
                 <button
                 key={server.version + server.type}
-                onClick={() => handleServerTypeSelect(server.type, server.version)}
+                onClick={() => handleServerTypeSelect(  server.id)}
                 onDoubleClick={handleNext}
                 className={`p-4 border rounded-lg ${
                   selectedServerName === server.version && selectedServerType === server.type

@@ -53,7 +53,7 @@ const CreateServerStep = ({ onBack, onFinish }: CreateServerStepProps) => {
       <div className="p-4 border rounded-lg bg-gray-100">
         <h3 className="text-lg font-medium">Server Configuration</h3>
         <p><strong>Name:</strong> {serverConfig.name}</p>
-        <p><strong>Type:</strong> {serverConfig.serverName}</p>
+        <p><strong>Type:</strong> {serverConfig.type}</p>
         <p><strong>Version:</strong> {serverConfig.version}</p>
       </div>
 

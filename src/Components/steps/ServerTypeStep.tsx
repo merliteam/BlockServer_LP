@@ -63,11 +63,12 @@ const ServerTypeStep = ({ onNext, onBack }: ServerTypeStepProps) => {
             className="p-8 border border-gray-300 rounded-lg hover:border-blue-500 focus:outline-none"
           >
             <Image
-              width={30}
-              height={30}
+              width={64}
+              height={64}
               src="/bedrock.webp" // URL de prueba
               alt="Bedrock"
-              className="w-16 h-16 mx-auto"
+              className="mx-auto"
+              
             />
             <p className="text-center mt-2">Bedrock</p>
           </button>
@@ -76,15 +77,12 @@ const ServerTypeStep = ({ onNext, onBack }: ServerTypeStepProps) => {
             className="p-8 border border-gray-300 rounded-lg hover:border-blue-500 focus:outline-none"
           >
             <Image
-              src="/java.jpg" // URL de prueba
+              src="/javaicon.png" // URL de prueba
               alt="java"
-              className="w-16 h-16 mx-auto"
-              width={30}
-              height={30}
-              //priority // Optimización para cargar más rápido
-              priority
-              //mantener la relación de aspecto
-              objectFit="contain"   // "cover" también funciona, depende de tu caso
+              className="mx-auto"
+              width={64}
+              height={84}
+     
               />
             <p className="text-center mt-2">Java</p>
           </button>
