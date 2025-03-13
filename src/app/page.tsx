@@ -1,5 +1,4 @@
   "use client";
-  import ServerCreationWizard from "@/Components/ServerCreationWizard/ServerCreationWizard";
   import { ServerProvider } from "../Utils/ServerContext";
   import type { AppProps } from "next/app";
   import Image from "next/image";

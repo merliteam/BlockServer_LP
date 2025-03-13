@@ -12,7 +12,7 @@ export default function PorQueElegirnos() {
   
 
       {/* Contenedor de tarjetas */}
-      <div className="flex flex-col items-center justify-center md:grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-20 md:items-start">
+      <div className="flex flex-col items-center justify-center  md:grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-20 md:items-start">
   {porQueElegirnosCards.map((card, index) => (
         PorQueElegirnosCard({card})
     ))}

@@ -25,7 +25,7 @@ export default function Auth() {
           Tu navegador no soporta la etiqueta de video.
         </video>
 
-        <div className="relative z-10 shadow-xl rounded-xl border border-black px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
+        <div className="relative z-10 shadow-xl rounded-xl border  border-black px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
           <h2 className="font-bold text-3xl text-center mb-4">
             {isLogin ? "Login" : "Registro"}
           </h2>
@@ -74,17 +74,7 @@ export default function Auth() {
                     className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-500"
                   />
                 </div>
-                <div className="flex flex-col gap-1 w-full">
-                  <label htmlFor="apellido" className="text-lg font-medium text-gray-700">
-                    Apellido:
-                  </label>
-                  <input
-                    type="text"
-                    id="apellido"
-                    placeholder="Tu apellido"
-                    className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-500"
-                  />
-                </div>
+           
                 <div className="flex flex-col gap-1 w-full">
                   <label htmlFor="email" className="text-lg font-medium text-gray-700">
                     Email:

@@ -14,24 +14,24 @@ export default function QueEsBlockServer() {
       svgUrl: "/bubble-red.svg",
       fondo: "/bubble-red-fondo.svg",
       angle: 0,
-      top: "top-[-80px]",
+      top: "top-[-74px]",
       left: "left-[-142px]",
       textTop: "top-[-70px]",
-      textLeft: "left-[-225px]",
+      textLeft: "left-[-235px]",
       titleColor: "text-[#E15E5A]",
       bgClor: "bg-red-400"
     },
     {
       id: 2,
       titulo: "Soporte de Plataforma",
-      descripcion: "Soporta tanto las ediciones Java como Bedrock",
+      descripcion: "Soporta tanto las ediciones Java como Bedrock para versatilidad",
       svgUrl: "/bubble-blue.svg",
       fondo: "/bubble-blue-fondo.svg",
       angle: 72,
-      top: "top-[-180px]",
-      left: "left-[222px]",
+      top: "top-[-170px]",
+      left: "left-[158px]",
       textTop: "top-[-90px]",
-      textLeft: "left-[210px]",
+      textLeft: "left-[170px]",
       titleColor: "text-[#17B0E3]",
       bgClor: "bg-blue-400"
     },
@@ -42,24 +42,24 @@ export default function QueEsBlockServer() {
       svgUrl: "/bubble-green.svg",
       fondo: "/bubble-green-fondo.svg",
       angle: 144,
-      top: "top-[131px]",
-      left: "right-[-193px]",
+      top: "top-[78px]",
+      left: "right-[-178px]",
       textTop: "top-[-50px]",
-      textLeft: "left-[220px]",
+      textLeft: "left-[180px]",
       titleColor: "text-[#3BC482]",
       bgClor: "bg-green-400"
     },
     {
       id: 4,
       titulo: "Herramientas Intuitivas",
-      descripcion: "Herramientas fáciles de usar para administrar el servidor",
+      descripcion: "Proporciona herramientas fáciles de usar para la gestión del servidor",
       svgUrl: "/bubble-lime.svg",
       fondo: "/bubble-greenLight-fondo.svg",
       angle: 216,
-      top: "bottom-[-168px]",
-      left: "right-[28px]",
-      textTop: "top-[190px]",
-      textLeft: "left-[20px]",
+      top: "bottom-[-150px]",
+      left: "right-[-6px]",
+      textTop: "top-[160px]",
+      textLeft: "left-[-10px]",
       titleColor: "text-[#93C131]",
       bgClor: "bg-lime-400"
     },
@@ -70,10 +70,10 @@ export default function QueEsBlockServer() {
       svgUrl: "/bubble-yellow.svg",
       fondo: "/bubble-orange-fondo.svg",
       angle: 288,
-      top: "bottom-[-75px]",
-      left: "left-[-122px]",
+      top: "bottom-[-83px]",
+      left: "left-[-125px]",
       textTop: "top-[-20px]",
-      textLeft: "left-[-230px]",
+      textLeft: "left-[-300px]",
       titleColor: "text-[#DD8433]",
       bgClor: "bg-yellow-400"
     },
@@ -89,9 +89,9 @@ export default function QueEsBlockServer() {
 
         {/*Desktop*/}
 
-      <div className="hidden p-96 md:flex flex-col gap-10 justify-center items-center">
+      <div className="hidden p-80 pt-52 md:flex flex-col gap-10 justify-center items-center">
       {/* Contenedor relativo para el círculo + botones */}
-      <div className="relative w-[400px] h-[400px] flex items-center justify-center">
+      <div className="relative w-[300px] h-[300px] flex items-center justify-center">
         {/* Imagen circular de fondo */}
         <Image
           src={"/circle.svg"}
@@ -119,7 +119,7 @@ export default function QueEsBlockServer() {
 
           // Transformaciones al hacer hover: mover y escalar
           const defaultTransform = `rotate(${item.angle}deg) translate(${normalRadius}px) rotate(-${item.angle}deg) scale(1)`;
-          const hoverTransform = `rotate(${item.angle}deg) translate(${hoverRadius}px) rotate(-${item.angle}deg) scale(1.2)`;
+          const hoverTransform = `rotate(${item.angle}deg) translate(${hoverRadius}px) rotate(-${item.angle}deg) scale(1.1)`;
 
           return (
             <div
@@ -136,7 +136,7 @@ export default function QueEsBlockServer() {
                 onMouseLeave={() => setHoveredId(null)}
               >
                 {/* Botón (la burbuja) */}
-                <button className="relative w-44 h-44 flex items-center justify-center">
+                <button className="relative w-36 h-36 flex items-center justify-center">
                   {/* SVG de la burbuja detrás */}
                   <div className="absolute inset-0 z-0">
                     <Image
@@ -151,8 +151,8 @@ export default function QueEsBlockServer() {
                     <Image
                       src={item.fondo}
                       alt="bubble shape"
-                      width={90}
-                      height={90}
+                      width={70}
+                      height={70}
                       className="object-contain pointer-events-none"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function QueEsBlockServer() {
                   <h6
                     className={`
                       font-bold ${item.titleColor}
-                      transition-colors duration-500
+                      transition-colors duration-500 text-left
                       ${isHovered ? "text-3xl" : "text-2xl"}
                     `}
                   >
