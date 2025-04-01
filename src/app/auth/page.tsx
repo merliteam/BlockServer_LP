@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Footer from "@/Components/Footer";
 import Header from "@/Components/Header";
+import ComingSoonTimer from "@/Components/coming-soon-timer/coming-soon";
 
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
@@ -27,7 +28,7 @@ export default function Auth() {
 
         <div className="relative z-10 shadow-xl rounded-xl border  border-black px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
           <h2 className="font-bold text-3xl text-center mb-4">
-            {isLogin ? "Login" : "Registro"}
+            {isLogin ? "Inicia sesión" : "Crea una cuenta antes del lanzamiento y obtén acceso gratuito desde el primer día!"}
           </h2>
           <form className="p-4 flex flex-col max-w-lg justify-center items-center gap-4 mx-auto">
             {isLogin ? (
@@ -63,6 +64,8 @@ export default function Auth() {
               </>
             ) : (
               <>
+                        <ComingSoonTimer />
+              
                 <div className="flex flex-col gap-1 w-full">
                   <label htmlFor="nombre" className="text-lg font-medium text-gray-700">
                     Nombre:

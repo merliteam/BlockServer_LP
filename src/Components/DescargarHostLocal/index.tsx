@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import BotonDescargar from "../BotonDescargar";
-
+import ComingSoonTimer from "../coming-soon-timer/coming-soon";
+import Link from "next/link";
 export default function DescargarHostLocal() {
   return (
     <div>
@@ -42,13 +43,19 @@ export default function DescargarHostLocal() {
         {/* Contenido Desktop */}
         <h4 className="font-semibold text-3xl">Descargar Host Local!</h4>
         <p className="text-lg text-[#F2F2F2] leading-relaxed">
-          Con nuestro Host Local, tendrás todo lo que necesitas para configurar
-          tu propio servidor Minecraft directamente en tu <br />
-          computadora. ¡Es rápido, seguro y completamente gratuito! Descubre la
-          libertad de personalizar y controlar cada detalle de tu <br />
-          experiencia de juego.
+        Con nuestro Host Local, tendrás todo lo que necesitas para configurar tu propio servidor Minecraft directamente en tu computadora. ¡Es rápido, seguro y completamente gratuito! Descubre la libertad de personalizar y controlar cada detalle de tu experiencia de juego.
+
+Además, si te registrás antes de la fecha de lanzamiento, tendrás acceso gratuito desde el primer día. ¡No te lo pierdas!
         </p>
-        <BotonDescargar />
+       {/* <BotonDescargar /> */}
+      <ComingSoonTimer />
+      <Link href={'/auth'}>
+
+       <button className="px-3 py-3 bg-gray-800 text-white rounded-lg mt-4 hover:bg-[#FFFFFF] hover:text-black transition duration-500 ease-in-out">
+        Regístrate ahora
+       </button>
+       </Link>
+
       </div>
 
       {/* ========== MOBILE ========== */}
@@ -76,12 +83,18 @@ export default function DescargarHostLocal() {
             Descargar Host Local!
           </h4>
           <p className="text-[20px] text-center leading-relaxed">
-            Con nuestro Host Local, tendrás todo lo que necesitas para configurar
-            tu propio servidor Minecraft directamente en tu computadora. ¡Es
-            rápido, seguro y completamente gratuito! Descubre la libertad de
-            personalizar y controlar cada detalle de tu experiencia de juego.
+          Con nuestro Host Local, tendrás todo lo que necesitas para configurar tu propio servidor Minecraft directamente en tu computadora. ¡Es rápido, seguro y completamente gratuito! Descubre la libertad de personalizar y controlar cada detalle de tu experiencia de juego.
+
+Además, si te registrás antes de la fecha de lanzamiento, tendrás acceso gratuito desde el primer día. ¡No te lo pierdas!
           </p>
-          <BotonDescargar />
+          {/*<BotonDescargar /> */}
+          <ComingSoonTimer />
+          <Link href={'/auth'}>
+
+<button className="px-3 py-3 bg-gray-800 text-white rounded-lg mt-2 hover:bg-[#FFFFFF] hover:text-black transition duration-500 ease-in-out">
+ Regístrate ahora
+</button>
+</Link>
         </div>
 
         </div>

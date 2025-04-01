@@ -16,7 +16,7 @@ export default function Header(){
                                 { /* Navigation */}
                             <Link href="/blog" className="text-white">Blog</Link>
                              <Link href="/guias" className="text-white">Guías</Link>
-                             <BotonDescargar />
+                             {/*<BotonDescargar /> */}
                              <Link href="/auth" className="rounded-lg text-white bg-gradient-to-r bg-blue-500 px-5 py-2 transition-all hover:bg-blue-700 hover:to-[#8f6edc]">Ingresar</Link>
 
                     </div>
