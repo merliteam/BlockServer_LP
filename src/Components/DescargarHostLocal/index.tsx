@@ -43,9 +43,7 @@ export default function DescargarHostLocal() {
         {/* Contenido Desktop */}
         <h4 className="font-semibold text-3xl">Descargar Host Local!</h4>
         <p className="text-lg text-[#F2F2F2] leading-relaxed">
-        Con nuestro Host Local, tendrás todo lo que necesitas para configurar tu propio servidor Minecraft directamente en tu computadora. ¡Es rápido, seguro y completamente gratuito! Descubre la libertad de personalizar y controlar cada detalle de tu experiencia de juego.
-
-Además, si te registrás antes de la fecha de lanzamiento, tendrás acceso gratuito desde el primer día. ¡No te lo pierdas!
+        Se de los primeros en registrarte para probar nuestro servidor local, que estará disponible gratis en ‘N’ días. Además, recibirás importantes beneficios cuando este diponible la versión premium en la nube, por acompañarnos desde el principio!
         </p>
        {/* <BotonDescargar /> */}
       <ComingSoonTimer />
@@ -83,9 +81,8 @@ Además, si te registrás antes de la fecha de lanzamiento, tendrás acceso grat
             Descargar Host Local!
           </h4>
           <p className="text-[20px] text-center leading-relaxed">
-          Con nuestro Host Local, tendrás todo lo que necesitas para configurar tu propio servidor Minecraft directamente en tu computadora. ¡Es rápido, seguro y completamente gratuito! Descubre la libertad de personalizar y controlar cada detalle de tu experiencia de juego.
-
-Además, si te registrás antes de la fecha de lanzamiento, tendrás acceso gratuito desde el primer día. ¡No te lo pierdas!
+          Se de los primeros en registrarte para probar nuestro servidor local, que estará disponible gratis en ‘N’ días. Además, recibirás importantes beneficios cuando este diponible la versión premium en la nube, por acompañarnos desde el principio!
+         
           </p>
           {/*<BotonDescargar /> */}
           <ComingSoonTimer />

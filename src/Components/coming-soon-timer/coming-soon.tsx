@@ -13,7 +13,7 @@ export default function ComingSoonTimer() {
   useEffect(() => {
     // Set target date to 3 days from now for demonstration
     const now = new Date()
-    let targetDate = new Date(2025, 3, 15, 23, 59, 59)
+    let targetDate = new Date(2025, 4, 3, 23, 59, 59)
     
         if (now > targetDate) {
             const now = new Date("2025-04-01T00:00:00")
