@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ServerProvider } from "../Utils/ServerContext";
+import { AuthProvider } from "@/contexts/AuthContext";
 
  
 
@@ -25,9 +26,11 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <AuthProvider>
         <ServerProvider>
         {children}
         </ServerProvider>
+        </AuthProvider>
       </body>
     </html>
   );
