@@ -36,7 +36,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Obtener perfil del usuario logueado desde el token
   async function fetchUserProfile(token: string) {
     try {
-      const res = await fetch("http://185.139.1.204:4000/api/users/me", {
+      const res = await fetch("https://strapi.block-server.com/api/users/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -53,7 +53,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Registro
   async function register(username: string, email: string, password: string) {
     try {
-      const res = await fetch("http://185.139.1.204:4000/api/auth/local/register", {
+      const res = await fetch("https://strapi.block-server.com/api/auth/local/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),
@@ -79,7 +79,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Login
   async function login(identifier: string, password: string) {
     try {
-      const res = await fetch("http://185.139.1.204:4000/api/auth/local", {
+      const res = await fetch("https://strapi.block-server.com/api/auth/local", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ identifier, password }),
