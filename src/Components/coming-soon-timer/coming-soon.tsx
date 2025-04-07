@@ -53,14 +53,14 @@ export default function ComingSoonTimer() {
   return (
     <div className="flex flex-col items-center justify-center  text-white p-4">
 
-      <div className="flex items-center justify-center gap-4 md:gap-6">
-        <TimeUnit value={timeLeft.days} label="DAYS" />
+      <div className="flex items-center justify-center gap-2 md:gap-6">
+        <TimeUnit value={timeLeft.days} label="DÍAS" />
         <Separator />
-        <TimeUnit value={timeLeft.hours} label="HOURS" />
+        <TimeUnit value={timeLeft.hours} label="HORAS" />
         <Separator />
-        <TimeUnit value={timeLeft.minutes} label="MINUTES" />
+        <TimeUnit value={timeLeft.minutes} label="MINUTOS" />
         <Separator />
-        <TimeUnit value={timeLeft.seconds} label="SECONDS" />
+        <TimeUnit value={timeLeft.seconds} label="SEGUNDOS" />
       </div>
 
    
@@ -71,8 +71,8 @@ export default function ComingSoonTimer() {
 function TimeUnit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-[#152a47] rounded-lg px-4 py-3 min-w-[60px] md:min-w-[80px] flex items-center justify-center">
-        <span className="text-2xl md:text-4xl font-bold text-[#3b82f6]">{value.toString().padStart(2, "0")}</span>
+      <div className="bg-[#152a47] rounded-lg px-4 py-3 max-w-[200px] md:min-w-[80px] flex items-center justify-center">
+        <span className="text-xl md:text-4xl font-bold text-[#3b82f6]">{value.toString().padStart(2, "0")}</span>
       </div>
       <div className="text-[10px] md:text-xs text-gray-400 mt-2">{label}</div>
     </div>
@@ -80,6 +80,6 @@ function TimeUnit({ value, label }: { value: number; label: string }) {
 }
 
 function Separator() {
-  return <div className="text-2xl md:text-4xl font-bold text-[#3b82f6]">:</div>
+  return <div className="text-[1px] md:text-4xl font-bold text-[#3b82f6]">:</div>
 }
 

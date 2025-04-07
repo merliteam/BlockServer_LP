@@ -6,6 +6,7 @@ import Footer from "@/Components/Footer";
 import Header from "@/Components/Header";
 import ComingSoonTimer from "@/Components/coming-soon-timer/coming-soon";
 import { useAuth } from "@/contexts/AuthContext";
+import HeaderMobile from "@/Components/HeaderMobile"; // Asegurate de la ruta correcta
 
 // Importamos framer-motion y el icono
 import { motion } from "framer-motion";
@@ -18,6 +19,7 @@ import { CheckCircle } from "lucide-react";
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
 
+  const [openMenu, setOpenMenu] = useState(false);
 
   
 
@@ -112,8 +114,8 @@ export default function Auth() {
           Tu navegador no soporta la etiqueta de video.
         </video>
 
-        <div className="relative z-10 shadow-xl rounded-xl border border-black px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
-          <h2 className="font-bold text-3xl text-center mb-4">
+        <div className="relative z-10 shadow-xl rounded-xl border border-black mt-5 md:mt-0 w-[300px] md:w-auto px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
+          <h2 className="font-bold text-xl md:text-3xl text-center mb-4">
             {isLogin
               ? "Inicia sesión"
               : "Crea una cuenta antes del lanzamiento y obtén acceso gratuito desde el primer día!"}

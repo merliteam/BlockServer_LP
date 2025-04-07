@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ServerProvider } from "../Utils/ServerContext";
 import { AuthProvider } from "@/contexts/AuthContext";
+import HeaderMobile from "@/Components/HeaderMobile";
 
  
 
@@ -28,6 +29,8 @@ export default function RootLayout({
       >
         <AuthProvider>
         <ServerProvider>
+              <HeaderMobile />
+        
         {children}
         </ServerProvider>
         </AuthProvider>
