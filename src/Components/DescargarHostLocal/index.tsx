@@ -34,7 +34,7 @@ export default function DescargarHostLocal() {
           <div className="absolute inset-0 bg-black opacity-70" />
         </div>
 
-            <AnimateInView animation="zoom">
+            <AnimateInView animation="zoom" duration={0.8}>
 
 
         <h4 className="font-semibold text-3xl">Descargar Host Local!</h4>
@@ -57,8 +57,9 @@ export default function DescargarHostLocal() {
             <Image src="/machine.png" alt="Host Local Background" fill className="object-cover object-center" />
           </div>
           <div className="absolute inset-0 bg-black/75 z-20" />
+          <AnimateInView animation="zoom" duration={0.8}>
+
           <div className="relative z-30 flex flex-col items-center justify-center px-6 py-12 mt-20 h-full text-white gap-6">
-          <AnimateInView animation="zoom">
 
            
             <h4 className="font-normal text-[48px] text-center">Descargar Host Local!</h4>
@@ -70,8 +71,9 @@ export default function DescargarHostLocal() {
               </button>
             </Link>
 
-          </AnimateInView>
           </div>
+          </AnimateInView>
+
         </div>
       </div>
     </div>

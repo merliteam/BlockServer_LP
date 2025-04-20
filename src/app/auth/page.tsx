@@ -7,6 +7,7 @@ import Header from "@/Components/Header";
 import ComingSoonTimer from "@/Components/coming-soon-timer/coming-soon";
 import { useAuth } from "@/contexts/AuthContext";
 import HeaderMobile from "@/Components/HeaderMobile"; // Asegurate de la ruta correcta
+import AnimateInView from "../../Components/Animaciones/animate-in-view";
 
 // Importamos framer-motion y el icono
 import { motion } from "framer-motion";
@@ -113,6 +114,9 @@ export default function Auth() {
         >
           Tu navegador no soporta la etiqueta de video.
         </video>
+
+        <AnimateInView animation="fade" duration={0.8} delay={0.2} >
+
 
         <div className="relative z-10 shadow-xl rounded-xl border border-black mt-5 md:mt-0 w-[300px] md:w-auto px-6 py-6 md:px-20 md:py-10 bg-white bg-opacity-90">
           <h2 className="font-bold text-xl md:text-3xl text-center mb-4">
@@ -245,6 +249,8 @@ export default function Auth() {
             </button>
           </div>
         </div>
+
+        </AnimateInView>
       </div>
 
       {/* Cartel animado de éxito */}
