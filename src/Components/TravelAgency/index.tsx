@@ -2,11 +2,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import HeaderMobile from "@/Components/HeaderMobile"; // Asegurate de la ruta correcta
-
+import AnimateInView from "../Animaciones/animate-in-view";
 export default function TravelAgency() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
+
     <div className="relative min-h-[800px] md:min-h-screen w-full flex flex-col text-white overflow-hidden">
       {/* ==== Imagen de fondo DESKTOP ==== */}
       <div className="absolute inset-0 -z-10 hidden md:block">
@@ -35,6 +36,7 @@ export default function TravelAgency() {
 
       {/* ==== Menú desplegable para MOBILE ==== */}
     
+      <AnimateInView animation="slide-right" duration={0.5} delay={0.2}>
 
       {/* CONTENIDO PARA MOBILE */}
       <div className="md:hidden mt-20 flex flex-col items-center justify-center px-2 gap-10 relative z-20">
@@ -63,6 +65,10 @@ export default function TravelAgency() {
           </p>
         </div>
       </div>
+
+      </AnimateInView>
+
+
     </div>
   );
 }

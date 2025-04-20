@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import AnimateInView from "../Animaciones/animate-in-view";
 
 export default function QueEsBlockServer() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -91,6 +92,14 @@ export default function QueEsBlockServer() {
 
       <div className="hidden p-80 pt-52 md:flex flex-col gap-10 justify-center items-center">
       {/* Contenedor relativo para el círculo + botones */}
+
+      <AnimateInView animation="slide-up" duration={0.8} delay={0.2}>
+
+    
+
+
+
+
       <div className="relative w-[300px] h-[300px] flex items-center justify-center">
         {/* Imagen circular de fondo */}
         <Image
@@ -187,13 +196,19 @@ export default function QueEsBlockServer() {
           );
         })}
       </div>
+
+      </AnimateInView>
       </div>
 
         {/*Mobile*/}
 
-        <div className="md:hidden flex relative justify-center items-center flex-col gap-10 p-32">
+        <div className="md:hidden flex relative justify-center items-center flex-col gap-12 p-32">
+
+        <AnimateInView animation="slide-up" duration={0.8} delay={0.2}>
+
+
   {items.map((item) => (
-    <div className="flex flex-col items-center justify-center gap-4" key={item.id}>
+    <div className="flex flex-col items-center justify-center gap-4 mt-10" key={item.id}>
       {/* Contenedor circular con fondo */}
       <div
         className={`
@@ -223,6 +238,9 @@ export default function QueEsBlockServer() {
       </div>
     </div>
   ))}
+
+</AnimateInView>
+
 </div>
 
 

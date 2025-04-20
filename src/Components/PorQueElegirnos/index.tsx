@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { porQueElegirnosCards } from "../../config/config";
 import PorQueElegirnosCard from "../PorQueElegirnosCard";
+import AnimateInView from "../Animaciones/animate-in-view";
 
 export default function PorQueElegirnos() {
   return (
@@ -10,13 +11,20 @@ export default function PorQueElegirnos() {
         ¿Por qué<br/>elegirnos?
       </h1>
   
-
+            <AnimateInView animation="slide-up" duration={1} delay={0.2}>
+      
       {/* Contenedor de tarjetas */}
       <div className="flex flex-col items-center justify-center  md:grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-20 md:items-start">
   {porQueElegirnosCards.map((card, index) => (
         PorQueElegirnosCard({card})
     ))}
+
+
+      
+    
 </div>
+
+</AnimateInView>
 
 
     </div>

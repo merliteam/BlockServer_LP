@@ -1,8 +1,11 @@
 import Image from "next/image";
-
+ 
 export default function Lanzamiento(){
     return(
         <div className="flex flex-col gap-6  md:p-16 min-h-screen bg-[#252B42] md:bg-gray-950 justify-center items-center">
+            
+             
+            
             <div className="flex flex-col gap-4 justify-center items-center px-14 md:px-48">
                     <h3 className="text-white font-semibold text-[45px] text-center">
                         Lanzamiento Global en 2025
@@ -17,6 +20,8 @@ export default function Lanzamiento(){
             <div className="md:hidden py-10">
                 <Image src={'/planetaLanzamiento.svg'} alt="lanzamiento" width={350} height={350}/>
             </div>
-        </div>
+
+
+         </div>
     )
 }

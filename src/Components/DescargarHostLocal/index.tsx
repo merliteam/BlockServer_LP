@@ -4,6 +4,7 @@ import Image from "next/image";
 import BotonDescargar from "../BotonDescargar";
 import ComingSoonTimer from "../coming-soon-timer/coming-soon";
 import Link from "next/link";
+import AnimateInView from "../Animaciones/animate-in-view";
 
 export default function DescargarHostLocal() {
   const [diasRestantes, setDiasRestantes] = useState<number | null>(null);
@@ -33,6 +34,9 @@ export default function DescargarHostLocal() {
           <div className="absolute inset-0 bg-black opacity-70" />
         </div>
 
+            <AnimateInView animation="zoom">
+
+
         <h4 className="font-semibold text-3xl">Descargar Host Local!</h4>
         <p className="text-lg text-[#F2F2F2] leading-relaxed">{mensaje}</p>
         <ComingSoonTimer />
@@ -41,6 +45,9 @@ export default function DescargarHostLocal() {
             Regístrate ahora
           </button>
         </Link>
+
+        </AnimateInView>
+
       </div>
 
       {/* ========== MOBILE ========== */}
@@ -51,6 +58,9 @@ export default function DescargarHostLocal() {
           </div>
           <div className="absolute inset-0 bg-black/75 z-20" />
           <div className="relative z-30 flex flex-col items-center justify-center px-6 py-12 mt-20 h-full text-white gap-6">
+          <AnimateInView animation="zoom">
+
+           
             <h4 className="font-normal text-[48px] text-center">Descargar Host Local!</h4>
             <p className="text-[20px] text-center leading-relaxed">{mensaje}</p>
             <ComingSoonTimer />
@@ -59,6 +69,8 @@ export default function DescargarHostLocal() {
                 Regístrate ahora
               </button>
             </Link>
+
+          </AnimateInView>
           </div>
         </div>
       </div>
